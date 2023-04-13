@@ -1,0 +1,64 @@
+.card-description {
+    overflow: hidden;
+    white-space: pre;
+    text-overflow: ellipsis;
+    transition: all 500ms ease-out;
+  }
+
+.card-overlay {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img-overlay {
+    border-radius: 0 !important;
+}
+
+ .capa {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(18, 18, 105, 0.486);
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease-out;
+ } 
+
+ .card-overlay:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+ } 
+
+ .card-overlay:hover > .capa .card-description {
+    white-space: normal;
+    overflow: hidden;
+    max-height: 80px;
+    text-overflow: ellipsis;
+ }
+
+ .color-btn {
+    background-color: rgb(40, 40, 83);
+ }
+
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+    display: none;
+}
+
+.border-0:focus {
+    outline: none;
+    border: none ;
+}
+
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+}

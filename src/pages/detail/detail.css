@@ -1,0 +1,23 @@
+.containerCardDetail {
+    background: transparent;
+    height: 10%;
+    /* max-height: 700px; */
+
+}
+
+.img-detail {
+    height: 100%;
+    width: 500px;
+}
+
+@media screen and (min-width: 500px){
+    .containerCardDetail {
+        width: 2000px;
+    }
+}
+
+/* @media screen and (max-width: 500px){
+    .containerDetail {
+        height: auto;
+    }
+} */
