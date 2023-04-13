@@ -22,7 +22,6 @@ const ListMovies = ({ data }) => {
                 <Link href={`/detail/${item.id}`} className="btn btn-primary rounded-0 color-btn">More info</Link>
                
               </div>
-              {/* <ion-icon name="heart-outline"></ion-icon> */}
             </div>
           </div>
         ))

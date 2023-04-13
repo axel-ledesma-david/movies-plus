@@ -3,8 +3,6 @@ import styles from '../../styles/Home.module.css'
 import { MdOutlineFavoriteBorder, MdOutlineFavorite } from "react-icons/md";
 import { FavContext } from '@/context/favoritesContext';
 const detailPage = ({ detail }) => {
-  console.log("DETAIL: ", detail)
-
   const [click, setClick] = useState(false)
   const [favStorage, setFavStorage] = useState([])
   const { addMovie, fav, setFav } = useContext(FavContext)

@@ -7,16 +7,11 @@ import '../styles/stylesIndex.css'
 import '../pages/detail/detail.css'
 import Footer from '@/components/Footer/Footer'
 import Navbar from '@/components/Navbar/Navbar'
-import FavoritesContext/* , {FavContext}  */from '@/context/favoritesContext'
-/* import { useContext, useEffect } from 'react' */
+import FavoritesContext from '@/context/favoritesContext'
 
 export default function App({ Component, pageProps }) {
 
- /*  const { fav } = useContext(FavContext)
 
-  useEffect(()=>{
-    localStorage.setItem("Favorites", JSON.stringify(fav))
-  },[fav]) */
 
   return (
     <FavoritesContext>
