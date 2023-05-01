@@ -7,7 +7,7 @@ import '../styles/stylesIndex.css'
 import '../pages/detail/detail.css'
 import Footer from '@/components/Footer/Footer'
 import Navbar from '@/components/Navbar/Navbar'
-import FavoritesContext from '@/context/favoritesContext'
+import FavoritesContext from '@/context/FavoritesContext'
 
 export default function App({ Component, pageProps }) {
 

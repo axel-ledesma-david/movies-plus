@@ -6,7 +6,7 @@ import axios from 'axios'
 import styles from '@/styles/Home.module.css'
 import Carousel from '@/components/Carousel/Carousel'
 import ListMovies from '@/components/ListMovies/ListMovies'
-import { FavContext } from '@/context/favoritesContext'
+import { FavContext } from '@/context/FavoritesContext'
 
 
 
