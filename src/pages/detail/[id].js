@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from 'react'
 import styles from '../../styles/Home.module.css'
 import { MdOutlineFavoriteBorder, MdOutlineFavorite } from "react-icons/md";
-import { FavContext } from '@/context/favoritesContext';
+import { FavContext } from '@/context/FavoritesContext';
 const detailPage = ({ detail }) => {
   const [click, setClick] = useState(false)
   const [favStorage, setFavStorage] = useState([])
