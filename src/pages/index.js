@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import { useState, useEffect, useContext } from 'react'
 import axios from 'axios'
-/* import Image from 'next/image' */
-/* import { Inter } from 'next/font/google' */
 import styles from '@/styles/Home.module.css'
 import Carousel from '@/components/Carousel/Carousel'
 import ListMovies from '@/components/ListMovies/ListMovies'
@@ -45,7 +43,7 @@ const handleChangeSearch = (e)=>{
         <Carousel pops={populars} />
         <div className='row mt-3 d-flex justify-content-center align-items-center gap-3'>
           <div className='d-flex justify-content-center align-items-center gap-3'>
-          <input  onChange={handleChangeSearch} className='outline-0 p-1 w-25' type='text'  placeholder='Search'></input>
+          <input  onChange={handleChangeSearch} className='outline-0 p-1 input-search' type='text'  placeholder='Search'></input>
           </div>
         {
           inputValue === '' ?  <ListMovies data={movies} /> :  <ListMovies data={dataApi} /> 

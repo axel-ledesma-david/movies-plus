@@ -8,7 +8,6 @@ const favorites = () => {
     
    useEffect(()=>{
      setStorage(JSON.parse(localStorage.getItem("Favorites")))
-     console.log(storage)
    },[])
 
   return (

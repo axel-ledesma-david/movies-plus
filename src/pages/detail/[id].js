@@ -27,7 +27,6 @@ const detailPage = ({ detail }) => {
   const handleClickFav = () => {
     setClick(!click)
     addMovie(detail, detail.id, click)
-    console.log("fav dentro de la funcion: ", fav)
   }
 
 
@@ -38,11 +37,6 @@ const detailPage = ({ detail }) => {
 
 
   const existInStorage = favStorage.find(item => item.id === detail.id)
-
-
-  console.log("fav fuera de la funcion: ", fav)
-
-  console.log("CLICK? ", click)
 
 
   return (
