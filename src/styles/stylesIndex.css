@@ -50,7 +50,6 @@
 .navbar-toggler:focus {
     outline: none;
     border: none;
-    display: none;
 }
 
 .border-0:focus {
