@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Carousel = ({ pops }) => {
 
-    
+
 
     const popsFilter = pops.filter((item, index) => index <= 4)
 

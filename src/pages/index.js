@@ -1,14 +1,13 @@
 import Head from 'next/head'
-import { useState, useEffect, useContext } from 'react'
+import { useState, useEffect, useContext, Suspense, lazy } from 'react'
 import axios from 'axios'
 import styles from '@/styles/Home.module.css'
-import Carousel from '@/components/Carousel/Carousel'
+/* import Carousel from '@/components/Carousel/Carousel' */
 import ListMovies from '@/components/ListMovies/ListMovies'
 import { FavContext } from '@/context/FavoritesContext'
 
 
-
-
+const Carousel = lazy(()=> import("@/components/Carousel/Carousel"))
 
 export default function Home({ movies, populars }) {
  
@@ -20,6 +19,7 @@ export default function Home({ movies, populars }) {
 
   const [inputValue, setInputValue] = useState('')
   const [ dataApi, setDataApi ] = useState([])
+  const [show, setShow] = useState(false)
 
 
 const handleChangeSearch = (e)=>{
@@ -40,6 +40,7 @@ const handleChangeSearch = (e)=>{
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <Suspense fallback={<h2>Cargando...</h2>} >
         <Carousel pops={populars} />
         <div className='row mt-3 d-flex justify-content-center align-items-center gap-3'>
           <div className='d-flex justify-content-center align-items-center gap-3'>
@@ -50,6 +51,7 @@ const handleChangeSearch = (e)=>{
         }
           
         </div>
+        </Suspense>
       </main>
     </>
   )
